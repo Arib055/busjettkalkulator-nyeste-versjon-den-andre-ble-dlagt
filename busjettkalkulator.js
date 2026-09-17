@@ -95,4 +95,3 @@ form.addEventListener("submit", (e) => {
 });
  
 oppdater();
- 
