@@ -13,8 +13,8 @@ header {
 }
 main {
   max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 40px auto;
+  padding: 50px;
 }
 section {
   background: white;
@@ -26,10 +26,10 @@ section {
 label, input, select, button {
   display: block;
   width: 100%;
-  margin-bottom: 0.8rem;
+  margin-bottom: 12px;
 }
 input, select {
-  padding: 0.7rem;
+  padding: 13px;
   border: 1px solid #bcc7d1;
   border-radius: 6px;
 }
