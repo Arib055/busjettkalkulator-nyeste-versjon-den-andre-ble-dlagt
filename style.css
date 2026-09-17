@@ -1,24 +1,38 @@
 body {
-font-family: Arial;
-margin: 40px;
-   
-}
-
-body {
-background-color: #ffff;
-text-align: center;
-}
-
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    text-align: center; }
+ 
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold; }
+ 
 input, select, button {
-    padding: 8px;
-    color: black;
-}
-
+    width: min(320px, 90%);
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 16px; }
+ 
 button {
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
     cursor: pointer;
+    font-weight: bold; }
+ 
+.overskrift {
+    padding-top: 16px
 }
-
-li {
-    margin: 8px;
-}
-
+ 
+ .type-knapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px; }
+    hight: 40px;
