@@ -1,56 +1,46 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Budsjettkalkulator</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Budsjett</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
+
     <h1>Budsjettkalkulator</h1>
-    <p>Legg inn inntekter og utgifter og se hvor mye du har igjen.</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>Legg til post</h2>
-      <form id="budsjettForm">
-        <label for="navn">Navn</label>
-        <input id="navn" type="text" placeholder="Lønn" required>
+    <label>Navn:</label>
+    <input id="navn" type="text">
 
-        <label for="belop">Beløp</label>
-        <input id="belop" type="number" min="0" step="0.01" placeholder="0" required>
+    <br><br>
 
+    <label>Beløp:</label>
+    <input id="belop" type="number">
 
-        <label for="type">Type</label>
-        <select id="type" required>
-          <option value="">Velg</option>
-          <option value="inntekt">Inntekt</option>
-          <option value="utgift">Utgift</option>
-        </select>
+    <br><br>
 
-        
-        <button type="submit">Legg til</button>
-      </form>
-    </section>
+    <label>Type:</label>
+    <select id="type">
+        <option value="">Velg</option>
+        <option value="inntekt">Inntekt</option>
+        <option value="utgift">Utgift</option>
+    </select>
 
-    <section>
-      <h2>Månedsoversikt</h2>
-      <div class="summer">
-        <div class="kort inntekter"><h3>Inntekter</h3><p id="totalInntekt">0 kr</p></div>
-        <div class="kort utgifter"><h3>Utgifter</h3><p id="totalUtgift">0 kr</p></div>
-        <div class="kort saldo"><h3>Saldo</h3><p id="saldo">0 kr</p></div>
-      </div>
-    </section>
+    <br><br>
 
-    <section>
-      <h2>Budsjettposter</h2>
-      <div id="tomListe" class="tom-liste">Du har ikke lagt til noen poster ennå.</div>
-      <ul id="budsjettListe"></ul>
-    </section>
-  </main>
+    <button onclick="leggTil()">Legg til</button>
 
-  <script src="script.js"></script>
+    <h2>Oversikt</h2>
+
+    <p>Inntekter: <span id="inntekt">0</span> kr</p>
+    <p>Utgifter: <span id="utgift">0</span> kr</p>
+    <p>Saldo: <span id="saldo">0</span> kr</p>
+
+    <h2>Poster</h2>
+
+    <ul id="liste"></ul>
+
+    <script src="script.js"></script>
 </body>
 </html>

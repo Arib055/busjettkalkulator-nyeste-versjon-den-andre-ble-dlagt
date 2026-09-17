@@ -1,83 +1,16 @@
-* { box-sizing: border-box; }
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f3f5f7;
-  color: #222;
+    font-family: Arial;
+    margin: 40px;
 }
-header {
-  background: #17324d;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+
+input, select, button {
+    padding: 8px;
 }
-main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 50px;
-}
-section {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-label, input, select, button {
-  display: block;
-  width: 100%;
-  margin-bottom: 12px;
-}
-input, select {
-  padding: 13px;
-  border: 1px solid #bcc7d1;
-  border-radius: 6px;
-}
+
 button {
-  background: #17324d;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 0.8rem;
-  cursor: pointer;
+    cursor: pointer;
 }
-button:hover { background: #0d4f82; }
-.summer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-.kort {
-  background: #f7f9fb;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-}
-.inntekter { background: #dff5e5; color: #155d2c; }
-.utgifter { background: #ffe3e3; color: #8a1c1c; }
-.saldo { background: #e1edff; color: #174a82; }
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.post {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  border: 1px solid #dcdfe4;
-  border-radius: 8px;
-  margin-top: 0.8rem;
-}
-.post div {
-  display: flex;
-  flex-direction: column;
-}
-small { color: #555; }
-.tom-liste {
-  text-align: center;
-  color: #555;
-  padding: 0.5rem;
+
+li {
+    margin: 8px;
 }
