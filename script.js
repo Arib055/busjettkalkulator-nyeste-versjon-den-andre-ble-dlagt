@@ -12,7 +12,6 @@ function leggTil() {
         return;
     }
 
-    // Legger til penger
     if (type == "inntekt") {
         inntekt = inntekt + belop;
     }
@@ -21,19 +20,16 @@ function leggTil() {
         utgift = utgift + belop;
     }
 
-    // Viser tallene
     document.getElementById("inntekt").textContent = inntekt;
     document.getElementById("utgift").textContent = utgift;
     document.getElementById("saldo").textContent = inntekt - utgift;
 
-    // Lager en ny post
     let nyPost = document.createElement("li");
 
     nyPost.textContent = navn + " - " + belop + " kr - " + type;
 
     document.getElementById("liste").appendChild(nyPost);
 
-    // Tømmer feltene
     document.getElementById("navn").value = "";
     document.getElementById("belop").value = "";
     document.getElementById("type").value = "";
